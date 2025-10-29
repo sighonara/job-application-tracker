@@ -149,9 +149,8 @@ server.put("/jobs/:id", function(req, res) {
 // Start the server and connect to the database
 mongoose
     .connect(
-        "mongodb+srv://fela:hwdXbg898CLhwObf@cluster0-nwalm.mongodb.net/app?retryWrites=true&w=majority", {
+        "mongodb://127.0.0.1:27017/app", {
             useNewUrlParser: true,
-            useFindAndModify: false
         }
     )
     .then(function() {
